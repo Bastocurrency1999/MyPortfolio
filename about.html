@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/fontawesome-all.min.css">
+<style>
+/* local fonts */
+@font-face{
+    src:url("Ampoule.ttf") format("truetype");
+
+    src:url("Battlestar.ttf") format("truetype");
+
+    src:url("Sriracha.ttf") format("truetype");
+}
+
+body{
+    margin:0;
+    padding-top:10px;
+    width:100%;
+    height:100vh;
+    background-image:url("image/index_bg.jpg");
+    background-size:cover;
+}
+*{
+    box-sizing:border-box;
+}
+
+/* index styling */
+/* start */
+/* header information */
+div.page-wrapper{
+
+}
+div.page-wrapper .header-information{
+    display: flex;
+    border:hidden;
+}
+header{
+    border:hidden;
+    width:50%;
+    padding-left:20px;
+    box-sizing:border-box;
+}
+header h1{
+    line-height:.7;
+    font-size:2vw;
+    font-family:Battlestar;
+    color:#0380F4;
+    padding-top:17px;
+}
+.header-information nav{
+    border:hidden;
+    width:65%;
+    padding-left:70px;
+    margin-top:15px;
+    height:100%;
+}
+.header-information nav ul li{
+    display:inline;
+    margin-left:20px;
+}
+.header-information nav ul li a.active{
+    color:red;
+}
+.header-information nav ul li:hover{
+    border-bottom:4px solid red;
+    padding-bottom:5px;
+    transition:550ms;
+}
+.header-information nav ul li a{
+    text-decoration:none;
+    font-family:Sriracha;
+    line-height:.7;
+    font-size:1.6vw;
+    color:#0380F4;
+    font-weight:bold;
+}   
+div.index-content-wrapper{
+    display:flex;
+    border:hidden;
+    height:780px;
+    margin-top:20px;
+}
+div.index-content-wrapper .image{
+    border:2px solid white;
+    width:40%;
+    display:flex;
+    flex-direction:column;
+    padding:10px;
+}
+div.index-content-wrapper .image h2{
+    text-align:center;
+    color:white;
+    font-size:1.4vw;
+    letter-spacing:2px;
+    color:#0380F4;
+    font-family:Battlestar;
+}
+div.index-content-wrapper .image p{
+    font-family:Sriracha;
+    color:white;
+    text-align:justify;
+    font-size:1.3vw;
+
+}
+div.index-content-wrapper .image .profile{
+    width:100%;
+    height:auto;
+    border:hidden;
+    height:auto;
+    padding:10px;
+}
+div.index-content-wrapper .image img{
+    border:hidden;
+    border-radius:50%;
+    width:60%;
+    height:300px;
+    display:block;
+    margin:40px auto;
+}
+div.index-content-wrapper .separator{
+    border:hidden;
+    width:20%;
+}
+div.index-content-wrapper .skills{
+    border:hidden;
+    width:40%;
+    padding:20px;
+    padding-top:60px;
+    display:flex;
+    flex-direction:column;
+}
+div.index-content-wrapper .skills .img{
+    border:1px solid blue;
+    width:100%;
+    height:400px;
+}
+div.index-content-wrapper .skills .img img{
+    width:100%;
+    height:100%;
+}
+div.index-content-wrapper .skills .myskills-info{
+    border:hidden;
+    width:100%;
+    height:70px;
+    background:white;
+}
+div.index-content-wrapper .skills .social-links{
+    border:hidden;
+    width:100%;
+    height:170px;
+    background:white;
+}
+div.index-content-wrapper .skills .social-links {
+    color:#0380F4;
+    font-size:1.7vw;
+    text-align:center;
+    line-height:.7;
+    font-family:Battlestar;
+}
+
+div.index-content-wrapper .skills .myskills-info h3{
+    color:#0380F4;
+    font-size:2.3vw;
+    text-align:center;
+    line-height:.7;
+    font-family:Battlestar;
+}
+
+footer{
+    border:1px solid white;
+    width:100%;
+    height:200px;
+    margin-top:20px;
+    background:transparent;
+    background:black;
+} 
+footer .newsletter{
+    border:hidden;
+    padding:20px;
+}
+footer .newsletter form{
+    color:white;
+    border:2px solid white;
+    width:65%;
+    margin:auto;
+    font-family:Sriracha;
+    font-size:2vw;
+    font-weight:bold;
+    padding:10px;
+}
+footer .newsletter form input{
+    padding:10px;
+    margin-left:5px;
+    width:30%;
+}
+footer .newsletter form input:hover{
+    outline:none;
+}
+footer .newsletter form input[type=submit]{
+    margin-left:5px;
+    width:20%;
+    font-size:1.1vw;
+    font-family:Sriracha;
+}
+footer .dev-option{
+     border:hidden;
+     padding:5px;
+}
+footer .dev-option h4{
+     border:2px solid white;
+     color:white;
+    font-size:1.5vw;
+    font-family:Sriracha;
+    text-align:center;
+}
+</style>
+    <title>My PortFolio</title>
+</head>
+<body>
+    <div class="page-wrapper">
+      <div class="header-information">
+    	<header>
+    		<h1>PORTFOLIO</h1>
+    	</header>   
+    	<nav>
+    		<ul>
+    			<li><a href="index.html">Home</a></li>
+    			<li><a href="knowledge.html">Knowledge</a></li>
+    			<li><a href="#" class="active">About Me
+    			<li><a href="experience.html">Experience</a></li>
+    			<li><a href="contact.html">Contact Me</a></li>
+    		</ul>
+    	</nav>   	
+      </div>
+        <div class="index-content-wrapper">
+        	<div class="image">
+                <img src="image/Ariyibi Baseet.jpg">
+            <div class="profile">
+            <h2>I'm Ariyibi Baseet Oluwadamilare<br><span style="font-size:1vw;color:#0380F4;">Frontend Developer</span></h2>
+                <p>
+                    A successful front end developer with 3+ years of experience who thrives in a dynamic and challenging production environment.Proven track record of providing, fast, accurate and effective code in response to requests from management to improve existing products or address critical issues with infrastructure. skilled in the following areas: javascript, Jquery, css3, html5, React js, Responsive Design UI/UX.
+                </p>
+            </div>
+            </div>
+            <div class="separator">
+                
+            </div>
+            <div class="skills">
+                <div class="myskills-info">
+                    <h3>MY SKILLS</h3>
+                </div>
+                <div class="img">
+                    <img src="image/skills.png">
+                </div>
+                <div class="social-links">
+                    <h3>MY SOCIAL LINKS</h3><p></p>
+                    <a href="https://github.com/Bastocurrency1999" target="_blank"><i class="fab fa-github" style="font-size:3.2vw;"></i></a>
+                    <a href="https://www.linkedin.com/in/baseet12345/" target="_blank"><i class="fab fa-linkedin" style="font-size:3.2vw;"></i></a>
+                    <a href="https://web.facebook.com/bastocurrency" target="_blank"><i class="fab fa-facebook-square" style="font-size:3.2vw;"></i></a>
+                </div>
+            </div>
+        </div>
+    	<footer>
+           <div class="newsletter">
+        <form action="" name="signupform" id="signupform" onsubmit="processForm();">
+        Subscribe to our News letter<input type="email" name="email" id="email" placeholder="Your Email Address" required>
+        <input type="submit" value="Subscribe" class="submit" id="submit">
+        </form>
+           </div>
+           <div class="dev-option">
+              <h4>Created By <a href="mailto:bastohenna@gmail.com">Ariyibi Baseet</a> &copy;CopyRight Reserved 2020</h4>
+           </div>
+    	</footer>
+    </div>
+<script>
+  document.getElementById('signupform').addEventListener("submit",function(even){
+        event.preventDefault();
+    })
+
+    function processForm()
+    {
+    email = document.getElementById('email').value;
+
+
+    var data ={
+        "email":email,
+        "isEnabled":true,
+        "roles":["user"],
+    }
+    
+    if (email==null || email=="") {
+        alert('your email field is empty');
+    }else{
+        fetch('https://api.openclass.ng/Register',{
+           method:'POST',
+           body:JSON.stringify(data),
+           headers:{
+            'Content-Type':'application/json'
+           }
+
+        }).then(function(data){
+            alert('Thanks for Subscribing!')
+        })
+    }
+}
+</script>
+</body>
+</html>

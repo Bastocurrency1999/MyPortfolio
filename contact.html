@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/fontawesome-all.min.css">
+<style>
+/* local fonts */
+@font-face{
+    src:url("Ampoule.ttf") format("truetype");
+
+    src:url("Battlestar.ttf") format("truetype");
+
+    src:url("Sriracha.ttf") format("truetype");
+}
+
+body{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:auto;
+}
+*{
+    box-sizing:border-box;
+}
+
+/* index styling */
+/* start */
+/* header information */
+div.page-wrapper{
+
+}
+div.page-wrapper .header-information{
+    display: flex;
+    border:1px solid red;
+}
+header{
+    border:1px solid black;
+    width:35%;
+    padding-left:20px;
+}
+header h1{
+    line-height:.7;
+    font-size:2vw;
+    font-family:Battlestar;
+}
+nav{
+    border:1px solid yellow;
+    width:65%;
+    padding-left:20px;
+}
+nav ul li{
+    display:inline;
+    margin-left:20px;
+}
+nav ul li a.active{
+    color:red;
+}
+nav ul li:hover{
+    border-bottom:4px solid red;
+    padding-bottom:5px;
+    transition:600ms;
+}
+nav ul li a{
+    text-decoration:none;
+    font-family:Sriracha;
+    line-height:.7;
+    font-size:1.6vw;
+    font-weight:bold;
+}    
+</style>
+    <title>My PortFolio</title>
+</head>
+<body>
+    <div class="page-wrapper">
+      <div class="header-information">
+    	<header>
+    		<h1>ARIYIBI BASEET</h1>
+    	</header>   
+    	<nav>
+    		<ul>
+    			<li><a href="">Home</a></li>
+    			<li><a href="">Knowledge</a></li>
+    			<li><a href="about.html" class="active">About Me
+    			<li><a href="">Experience</a></li>
+    			<li><a href="">Portfolio</a></li>
+    			<li><a href="" class="active">Contact Me</a></li>
+    		</ul>
+    	</nav>   	
+      </div>
+        <div class="index-content-wrapper">
+        	
+        </div>
+    	<footer>
+    		
+    	</footer>
+    </div>
+</body>
+</html>

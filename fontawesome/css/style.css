@@ -1,0 +1,210 @@
+/* local fonts */
+@font-face{
+    src:url("Ampoule.ttf") format("truetype");
+
+    src:url("Battlestar.ttf") format("truetype");
+
+    src:url("Sriracha.ttf") format("truetype");
+}
+
+body{
+    margin:0;
+    padding-top:10px;
+    width:100%;
+    height:100vh;
+    background-image:url("Image/Geometric.png");
+    background-size:cover;
+}
+*{
+    box-sizing:border-box;
+}
+
+/* index styling */
+/* start */
+/* header information */
+div.page-wrapper{
+
+}
+div.page-wrapper .header-information{
+    display: flex;
+    border:hidden;
+}
+header{
+    border:hidden;
+    width:50%;
+    padding-left:20px;
+    box-sizing:border-box;
+}
+header h1{
+    line-height:.7;
+    font-size:2vw;
+    font-family:Battlestar;
+    color:#0380F4;
+    padding-top:17px;
+}
+.header-information nav{
+    border:hidden;
+    width:65%;
+    padding-left:70px;
+    margin-top:15px;
+    height:100%;
+}
+.header-information nav ul li{
+    display:inline;
+    margin-left:20px;
+}
+.header-information nav ul li a.active{
+    color:red;
+}
+.header-information nav ul li:hover{
+    border-bottom:4px solid red;
+    padding-bottom:5px;
+    transition:550ms;
+}
+.header-information nav ul li a{
+    text-decoration:none;
+    font-family:Sriracha;
+    line-height:.7;
+    font-size:1.6vw;
+    color:#0380F4;
+    font-weight:bold;
+}   
+div.index-content-wrapper{
+    display:flex;
+    border:hidden;
+    height:780px;
+    margin-top:20px;
+}
+div.index-content-wrapper .image{
+    border:2px solid white;
+    width:40%;
+    display:flex;
+    flex-direction:column;
+    padding:10px;
+}
+div.index-content-wrapper .image h2{
+    text-align:center;
+    color:white;
+    font-size:1.4vw;
+    letter-spacing:2px;
+    color:#0380F4;
+    font-family:Battlestar;
+}
+div.index-content-wrapper .image p{
+    font-family:Sriracha;
+    color:white;
+    text-align:justify;
+    font-size:1.3vw;
+
+}
+div.index-content-wrapper .image .profile{
+    width:100%;
+    height:auto;
+    border:hidden;
+    height:auto;
+    padding:10px;
+}
+div.index-content-wrapper .image img{
+    border:hidden;
+    border-radius:50%;
+    width:60%;
+    height:300px;
+    display:block;
+    margin:40px auto;
+}
+div.index-content-wrapper .separator{
+    border:hidden;
+    width:20%;
+}
+div.index-content-wrapper .skills{
+    border:hidden;
+    width:40%;
+    padding:20px;
+    padding-top:60px;
+    display:flex;
+    flex-direction:column;
+}
+div.index-content-wrapper .skills .img{
+    border:1px solid blue;
+    width:100%;
+    height:400px;
+}
+div.index-content-wrapper .skills .img img{
+    width:100%;
+    height:100%;
+}
+div.index-content-wrapper .skills .myskills-info{
+    border:hidden;
+    width:100%;
+    height:70px;
+    background:white;
+}
+div.index-content-wrapper .skills .social-links{
+    border:hidden;
+    width:100%;
+    height:170px;
+    background:white;
+}
+div.index-content-wrapper .skills .social-links {
+    color:#0380F4;
+    font-size:1.7vw;
+    text-align:center;
+    line-height:.7;
+    font-family:Battlestar;
+}
+
+div.index-content-wrapper .skills .myskills-info h3{
+    color:#0380F4;
+    font-size:2.3vw;
+    text-align:center;
+    line-height:.7;
+    font-family:Battlestar;
+}
+
+footer{
+    border:1px solid white;
+    width:100%;
+    height:200px;
+    margin-top:20px;
+    background:transparent;
+    background:black;
+} 
+footer .newsletter{
+    border:hidden;
+    padding:20px;
+}
+footer .newsletter form{
+    color:white;
+    border:2px solid white;
+    width:65%;
+    margin:auto;
+    font-family:Sriracha;
+    font-size:2vw;
+    font-weight:bold;
+    padding:10px;
+}
+footer .newsletter form input{
+    padding:10px;
+    margin-left:5px;
+    width:30%;
+}
+footer .newsletter form input:hover{
+    outline:none;
+}
+footer .newsletter form input[type=submit]{
+    margin-left:5px;
+    width:20%;
+    font-size:1.1vw;
+    font-family:Sriracha;
+}
+footer .dev-option{
+     border:hidden;
+     padding:5px;
+}
+footer .dev-option h4{
+     border:2px solid white;
+     color:white;
+    font-size:1.5vw;
+    font-family:Sriracha;
+    text-align:center;
+}
