@@ -1,4 +1,11 @@
+@font-face{
+    src:url("Ampoule.ttf") format("truetype");
 
+    src:url("../../Fonts/Battlestar.ttf") format("truetype");
+    
+    font-family:Lato;
+    src:url("Lato.ttf") format("truetype");
+}
 html {
     font-size: 18px;
 }
@@ -15,7 +22,9 @@ html {
     margin-left: auto;
     margin-right: auto;
 }
-
+.active{
+    color:red;
+}
 #navbar {
     --navbar-height: 64px;
     height: var(--navbar-height);
@@ -39,18 +48,21 @@ html {
 .home-link,
 .navbar-link {
     color: var(--navbar-text-color);
+    color:white;
     transition: color 0.2s ease-in-out;
     text-decoration: none;
     display: flex;
-    font-weight: 400;
+    font-weight:bold;
+    font-size:20px;
+    font-family:monospace;
     align-items: center;
     transition: background-color 0.2s ease-in-out,
                 color 0.2s ease-in-out;
 }
-
 .home-link:focus,
-.home-link:hover {
-    color: var(--navbar-text-color-focus);
+.home-link:not()hover {
+    /*color: var(--navbar-text-color-focus);*/
+    color:#0380F4;
 }
 
 .navbar-link {
@@ -72,6 +84,7 @@ html {
     width: 30px;
     height: 30px;
     margin-right: 0.5em;
+    padding:3px 3px;
 }
 
 .navbar-toggle {

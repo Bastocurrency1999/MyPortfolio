@@ -6,7 +6,7 @@ font-family: 'Righteous', cursive;
 @font-face{
     src:url("Ampoule.ttf") format("truetype");
 
-    src:url("Battlestar.ttf") format("truetype");
+    src:url("../../Fonts/Battlestar.ttf") format("truetype");
     
     font-family:Lato;
     src:url("Lato.ttf") format("truetype");

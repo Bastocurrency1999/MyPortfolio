@@ -3,17 +3,17 @@
 <head>
 	<title></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="fontawesome/css/footer.css">
     <link rel="stylesheet" type="text/css" href="css/portfolio.css">
     <link rel="stylesheet" type="text/css" href="Media queries/portfolio_media.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
 </head>
 <body style="background-image:url('Image/index_bg.jpg');background-size:cover;">
     <div class="page-wrapper">
  <header id="navbar">
         <nav class="navbar-container container">
-          <a href="/" class="home-link">
-            <div class="navbar-logo"></div>
-            ARIYIBI BASEET
+          <a href="#" class="home-link">
+            <div class="navbar-logo">AB</div>
+            <span class="logo" style="font-family:Battlestar;line-height:4px;color:white;">ARIYIBI BASEET</span>
           </a>
           <button type="button" class="navbar-toggle" aria-label="Open navigation menu">
               <span class="icon-bar"></span>
@@ -22,7 +22,7 @@
           </button>
           <div class="navbar-menu">
             <ul class="navbar-links">
-              <li class="navbar-item"><a class="navbar-link" href="index.html">Home</a></li>
+              <li class="navbar-item"><a class="navbar-link active" href="index.html">Home</a></li>
               <li class="navbar-item"><a class="navbar-link" href="about.html">About</a></li>
               <li class="navbar-item"><a class="navbar-link" href="#">Portfolio</a></li>
               <li class="navbar-item"><a class="navbar-link" href="contact.html">Contact</a></li>
@@ -58,7 +58,7 @@
         				</div>
         				<div class="project-in-card">
         					<div class="project-image">
-        						<a href="#"><img src="Image/tiidelab.png"></a>
+        						<a href="#"><img src="Image/TIIDELabLogo.png"></a>
         					</div>
         					<div class="project-name">
         						<h4>TIIDELab Form</h4>
@@ -67,23 +67,24 @@
         			</div>
         		</div>
         	</section>
-<footer>
-	<div class="up-footer">
-		<div class="left none"></div>
-		<div class="middle">
-			<h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
-			<p>Click on the subscribe button and get latest <br>update about us</p>
-			<form>
-			Email-Address:&nbsp;<input type="email" name="">
-			<input type="submit" name="" value="Subscribe">
-		</form>
-		</div>
-		<div class="right none"></div>
-	</div>
-	<div class="down-footer">
-	<h4>Created By <a href="mailto:bastohenna@gmail.com">Ariyibi Baseet</a> &copy;CopyRight Reserved 2020</h4>
-	</div>
+<footer style="margin-top:100px;">
+  <div class="news-letter-wrapper">
+    <div class="left hidden"></div>
+    <div class="news-letter">
+              <h2>KINDLY SUBSCRIBE TO OUR NEWSLETTER</h2>
+      <p>Click on the subscribe button and get latest <br>update about us</p>
+      <form>
+      <input type="email" name="" placeholder="Email Address" required><br>
+      <input type="submit" name="" value="Subscribe">
+      </form>
+    </div>
+    <div class="right hidden"></div>
+  </div>
+  <div class="developer-wrapper">
+    <h4> By Ariyibi Baseet &copy;Copyright Reserved 2020.</h4>
+  </div>
 </footer>
     </div>
+<script src="js/navbar.js"></script>
 </body>
 </html>

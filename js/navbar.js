@@ -1,4 +1,4 @@
-const navbar = document.getElementById("navbar");
+ const navbar = document.getElementById("navbar");
 const navbarToggle = navbar.querySelector(".navbar-toggle");
 
 function openMobileNavbar() {

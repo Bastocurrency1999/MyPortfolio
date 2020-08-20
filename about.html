@@ -7,14 +7,15 @@
     <link rel="stylesheet" type="text/css" href="css/about_navbar.css">
     <link rel="stylesheet" type="text/css" href="css/about.css">
         <link rel="stylesheet" type="text/css" href="Media queries/about_media.css">
+        <link rel="stylesheet" type="text/css" href="css/footer.css">
     <title>My PortFolio</title>
 </head>
 <body style="background-image:url('Image/index_bg.jpg');background-size:cover;background-repeat:no-repeat;">
-     <header id="navbar">
+ <header id="navbar">
         <nav class="navbar-container container">
-          <a href="/" class="home-link">
-            <div class="navbar-logo"></div>
-            ARIYIBI BASEET
+          <a href="#" class="home-link">
+            <div class="navbar-logo">AB</div>
+            <span class="logo" style="font-family:Battlestar;line-height:4px;color:white;">ARIYIBI BASEET</span>
           </a>
           <button type="button" class="navbar-toggle" aria-label="Open navigation menu">
               <span class="icon-bar"></span>
@@ -23,7 +24,7 @@
           </button>
           <div class="navbar-menu">
             <ul class="navbar-links">
-              <li class="navbar-item"><a class="navbar-link" href="index.html">Home</a></li>
+              <li class="navbar-item"><a class="navbar-link active" href="index.html">Home</a></li>
               <li class="navbar-item"><a class="navbar-link" href="#">About</a></li>
               <li class="navbar-item"><a class="navbar-link" href="portfolio.html">Portfolio</a></li>
               <li class="navbar-item"><a class="navbar-link" href="contact.html">Contact</a></li>
@@ -59,48 +60,23 @@
     </div>
   </div>
 </div>
-<!--     	<footer>
-           <div class="newsletter">
-        <form action="" name="signupform" id="signupform" onsubmit="processForm();">
-        Subscribe to our News letter<input type="email" name="email" id="email" placeholder="Your Email Address" required>
-        <input type="submit" value="Subscribe" class="submit" id="submit">
-        </form>
-           </div>
-           <div class="dev-option">
-              <h4>Created By <a href="mailto:bastohenna@gmail.com">Ariyibi Baseet</a> &copy;CopyRight Reserved 2020</h4>
-           </div>
-    	</footer> -->
-<!-- <script>
-  document.getElementById('signupform').addEventListener("submit",function(even){
-        event.preventDefault();
-    })
-
-    function processForm()
-    {
-    email = document.getElementById('email').value;
-
-
-    var data ={
-        "email":email,
-        "isEnabled":true,
-        "roles":["user"],
-    }
-    
-    if (email==null || email=="") {
-        alert('your email field is empty');
-    }else{
-        fetch('https://api.openclass.ng/Register',{
-           method:'POST',
-           body:JSON.stringify(data),
-           headers:{
-            'Content-Type':'application/json'
-           }
-
-        }).then(function(data){
-            alert('Thanks for Subscribing!')
-        })
-    }
-}
-</script> -->
+<footer>
+  <div class="news-letter-wrapper">
+    <div class="left hidden"></div>
+    <div class="news-letter">
+              <h2>KINDLY SUBSCRIBE TO OUR NEWSLETTER</h2>
+      <p>Click on the subscribe button and get latest <br>update about us</p>
+      <form>
+      <input type="email" name="" placeholder="Email Address" required><br>
+      <input type="submit" name="" value="Subscribe">
+      </form>
+    </div>
+    <div class="right hidden"></div>
+  </div>
+  <div class="developer-wrapper">
+    <h4> By Ariyibi Baseet &copy;Copyright Reserved 2020.</h4>
+  </div>
+</footer>
+<script src="./js/navbar.js"></script>
 </body>
 </html>
