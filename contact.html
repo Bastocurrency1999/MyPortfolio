@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="fontawesome/css/fontawesome-all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 /* local fonts */
 @font-face{
@@ -19,9 +20,18 @@ body{
     padding:0;
     width:100%;
     height:auto;
+    background-image:url("image/index_bg.jpg");
 }
 *{
     box-sizing:border-box;
+}
+label{
+    font-family:Sriracha;
+    font-weight:bold;
+    color:#fff;
+}
+span{
+    color:red;
 }
 
 /* index styling */
@@ -32,68 +42,422 @@ div.page-wrapper{
 }
 div.page-wrapper .header-information{
     display: flex;
-    border:1px solid red;
+    border:hidden;
 }
-header{
-    border:1px solid black;
-    width:35%;
-    padding-left:20px;
+:root {
+    --navbar-bg-color: hsl(0, 0%, 15%);
+    --navbar-text-color: hsl(0, 0%, 85%);
+    --navbar-text-color-focus: white;
+    --navbar-bg-contrast: hsl(0, 0%, 25%);
 }
-header h1{
+
+/** {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}*/
+
+html {
+    font-size: 18px;
+}
+
+/*body {
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}*/
+
+.container {
+    max-width: 1000px;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#navbar {
+    --navbar-height: 64px;
+    position: fixed;
+    height: var(--navbar-height);
+    background-color: var(--navbar-bg-color);
+    left: 0;
+    right: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    margin-bottom:50px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+.navbar-item {
+    margin: 0.8em;
+    width: 100%;
+}
+
+.home-link,
+.navbar-link {
+    color: var(--navbar-text-color);
+    transition: color 0.2s ease-in-out;
+    text-decoration: none;
+    display: flex;
+    font-weight: 400;
+    align-items: center;
+    transition: background-color 0.2s ease-in-out,
+                color 0.2s ease-in-out;
+}
+
+.home-link:focus,
+.home-link:hover {
+    color: var(--navbar-text-color-focus);
+}
+
+.navbar-link {
+    justify-content: center;
+    width: 100%;
+    padding: 0.4em 0.8em;
+    border-radius: 5px;
+}
+
+.navbar-link:focus,
+.navbar-link:hover {
+    color: var(--navbar-text-color-focus);
+    background-color: var(--navbar-bg-contrast);
+}
+
+.navbar-logo {
+    background-color: var(--navbar-text-color-focus);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 0.5em;
+}
+
+.navbar-toggle {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.icon-bar {
+    display: block;
+    width: 25px;
+    height: 4px;
+    margin: 2px;
+    transition: background-color 0.2s ease-in-out,
+                transform 0.2s ease-in-out,
+                opacity 0.2s ease-in-out;
+    background-color: var(--navbar-text-color);
+}
+
+.navbar-toggle:focus .icon-bar,
+.navbar-toggle:hover .icon-bar {
+    background-color: var(--navbar-text-color-focus);
+}
+
+#navbar.opened .navbar-toggle .icon-bar:first-child,
+#navbar.opened .navbar-toggle .icon-bar:last-child {
+    position: absolute;
+    margin: 0;
+    width: 30px;
+}
+
+#navbar.opened .navbar-toggle .icon-bar:first-child {
+    transform: rotate(45deg);
+}
+
+#navbar.opened .navbar-toggle .icon-bar:nth-child(2) {
+    opacity: 0;
+}
+
+#navbar.opened .navbar-toggle .icon-bar:last-child {
+    transform: rotate(-45deg);
+}
+
+.navbar-menu {
+    position: fixed;
+    top: var(--navbar-height);
+    bottom: 0;
+    transition: opacity 0.2s ease-in-out,
+                visibility 0.2s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    left: 0;
+    right: 0;
+}
+
+#navbar.opened .navbar-menu {
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 1;
+    visibility: visible;
+}
+
+.navbar-links {
+    list-style-type: none;
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    background-color: var(--navbar-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 0;
+    right: 0;
+    margin: 1.4rem;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+#navbar.opened .navbar-links {
+    padding: 1em;
+    max-height: none;
+}
+
+@media screen and (min-width: 700px) {
+    .navbar-toggle {
+        display: none;
+    }
+    
+    #navbar .navbar-menu,
+    #navbar.opened .navbar-menu {
+        visibility: visible;
+        opacity: 1;
+        position: static;
+        display: block;
+        height: 100%;
+    }
+
+    #navbar .navbar-links,
+    #navbar.opened .navbar-links {
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+        position: static;
+        flex-direction: row;
+        list-style-type: none;
+        max-height: max-content;
+        width: 100%;
+        height: 100%;
+    }
+
+    #navbar .navbar-link:last-child {
+        margin-right: 0;
+    }
+}
+.contact-section{
+    background:url("index_bg.jpg") no-repeat center;
+    background-size:cover;
+    padding:40px 0;
+}
+.contact-section h1{
+    text-align:center;
+    color:#ddd;
     line-height:.7;
-    font-size:2vw;
-    font-family:Battlestar;
-}
-nav{
-    border:1px solid yellow;
-    width:65%;
-    padding-left:20px;
-}
-nav ul li{
-    display:inline;
-    margin-left:20px;
-}
-nav ul li a.active{
-    color:red;
-}
-nav ul li:hover{
-    border-bottom:4px solid red;
-    padding-bottom:5px;
-    transition:600ms;
-}
-nav ul li a{
-    text-decoration:none;
     font-family:Sriracha;
+}
+.contact-form{
+    max-width:600px;
+    margin:auto;
+    padding:0 10px;
+    overflow:hidden;
+}
+.contact-form-text{
+    display:block;
+    width:100%;
+    box-sizing:border-box;
+    margin:16px 0;
+    border:0;
+    background:#111;
+/*    padding:20px 20px;*/
+    outline:none;
+    color:#ddd;
+}
+input[type=text].contact-form-text{
+    color:#0380F4;
+    font-size:20px;
+    font-family:Sriracha;
+    background:#111;
+    padding:20px 20px;
+}
+input[type=email].contact-form-text{
+    color:#0380F4;
+    font-size:20px;
+    font-family:Sriracha;
+    background:#111;
+    padding:20px 20px;
+}
+.contact-form-text:hover{
+    box-shadow:0 0 10px 4px #34495e;
+}
+textarea.contact-form-text{
+    resize:none;
+    height:120px;
+    color:#0380F4;
+    font-size:20px;
     line-height:.7;
-    font-size:1.6vw;
+    font-family:Sriracha;
+    padding:20px 20px;
+}
+.contact-form-btn{
+    float:right;
+    width:30%;
+    border:0;
+    background:#33495e;
+    color:#fff;
+    padding:12px 50px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.5s;
+    font-family:Sriracha;
+    letter-spacing:2px;
+}
+.contact-form-btn:hover{
+    background:#2980b9;
+}
+footer{
+    border:1px solid white;
+    width:100%;
+    height:200px;
+    margin-top:20px;
+    background:transparent;
+    background:black;
+} 
+footer .newsletter{
+    border:hidden;
+    padding:20px;
+}
+footer .newsletter form{
+    color:white;
+    border:2px solid white;
+    width:65%;
+    margin:auto;
+    font-family:Sriracha;
+    font-size:2vw;
     font-weight:bold;
-}    
+    padding:10px;
+}
+footer .newsletter form input{
+    padding:10px;
+    margin-left:5px;
+    width:30%;
+}
+footer .newsletter form input:hover{
+    outline:none;
+}
+footer .newsletter form input[type=submit]{
+    margin-left:5px;
+    width:20%;
+    font-size:1.1vw;
+    font-family:Sriracha;
+}
+footer .dev-option{
+     border:hidden;
+     padding:5px;
+}
+footer .dev-option h4{
+     border:2px solid white;
+     color:white;
+    font-size:1.5vw;
+    font-family:Sriracha;
+    text-align:center;
+}
+@media (max-width:375px){
+    header h1{
+        font-size:10px;
+    }
+    nav ul li{
+        margin-left:2px;
+    }
+}
 </style>
     <title>My PortFolio</title>
 </head>
 <body>
     <div class="page-wrapper">
-      <div class="header-information">
-    	<header>
-    		<h1>ARIYIBI BASEET</h1>
-    	</header>   
-    	<nav>
-    		<ul>
-    			<li><a href="">Home</a></li>
-    			<li><a href="">Knowledge</a></li>
-    			<li><a href="about.html" class="active">About Me
-    			<li><a href="">Experience</a></li>
-    			<li><a href="">Portfolio</a></li>
-    			<li><a href="" class="active">Contact Me</a></li>
-    		</ul>
-    	</nav>   	
-      </div>
-        <div class="index-content-wrapper">
-        	
-        </div>
-    	<footer>
-    		
-    	</footer>
+ <header id="navbar">
+        <nav class="navbar-container container">
+          <a href="/" class="home-link">
+            <div class="navbar-logo"></div>
+            ARIYIBI BASEET
+          </a>
+          <button type="button" class="navbar-toggle" aria-label="Open navigation menu">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <div class="navbar-menu">
+            <ul class="navbar-links">
+              <li class="navbar-item"><a class="navbar-link" href="index.html">Home</a></li>
+              <li class="navbar-item"><a class="navbar-link" href="about.html">About</a></li>
+              <li class="navbar-item"><a class="navbar-link" href="portfolio.html">Portfolio</a></li>
+              <li class="navbar-item"><a class="navbar-link" href="#">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+    </header>
+<div class="contact-section">
+    <h1>Contact</h1>
+    <form class="contact-form" action="index.html" method="post">
+        <input type="text" name="" class="contact-form-text" placeholder="Your Name">
+        <input type="email" name="" class="contact-form-text" placeholder="Your Email Address">
+        <textarea class="contact-form-text" placeholder="Your Message Here...">
+            
+        </textarea>
+        <input type="submit" name="" class="contact-form-btn">
+    </form>
+</div>
+        <footer>
+           <div class="newsletter">
+        <form action="" name="signupform" id="signupform" onsubmit="processForm();">
+        Subscribe to our News letter<input type="email" name="email" id="email" placeholder="Your Email Address" required>
+        <input type="submit" value="Subscribe" class="submit" id="submit">
+        </form>
+           </div>
+           <div class="dev-option">
+              <h4>Created By <a href="mailto:bastohenna@gmail.com">Ariyibi Baseet</a> &copy;CopyRight Reserved 2020</h4>
+           </div>
+        </footer>
     </div>
+<script>
+  document.getElementById('signupform').addEventListener("submit",function(even){
+        event.preventDefault();
+    })
+
+    function processForm()
+    {
+    email = document.getElementById('email').value;
+
+
+    var data ={
+        "email":email,
+        "isEnabled":true,
+        "roles":["user"],
+    }
+    
+    if (email==null || email=="") {
+        alert('your email field is empty');
+    }else{
+        fetch('https://api.openclass.ng/Register',{
+           method:'POST',
+           body:JSON.stringify(data),
+           headers:{
+            'Content-Type':'application/json'
+           }
+
+        }).then(function(data){
+            alert('Thanks for Subscribing!')
+        })
+    }
+}
+</script>
 </body>
 </html>

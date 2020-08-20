@@ -14,160 +14,301 @@
     src:url("Sriracha.ttf") format("truetype");
 }
 
-body{
-    margin:0;
-    padding-top:10px;
-    width:100%;
-    height:100vh;
-    background-image:url("image/index_bg.jpg");
-    background-size:cover;
-}
 *{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
     box-sizing:border-box;
 }
+body{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#f1f1f1;
+    background-image:url("image/index_bg.jpg");
+}
+
 
 /* index styling */
 /* start */
 /* header information */
-div.page-wrapper{
-
-}
 div.page-wrapper .header-information{
     display: flex;
     border:hidden;
 }
-header{
-    border:hidden;
-    width:50%;
-    padding-left:20px;
-    box-sizing:border-box;
+:root {
+    --navbar-bg-color: hsl(0, 0%, 15%);
+    --navbar-text-color: hsl(0, 0%, 85%);
+    --navbar-text-color-focus: white;
+    --navbar-bg-contrast: hsl(0, 0%, 25%);
 }
-header h1{
-    line-height:.7;
-    font-size:2vw;
-    font-family:Battlestar;
-    color:#0380F4;
-    padding-top:17px;
+
+/** {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}*/
+
+html {
+    font-size: 18px;
 }
-.header-information nav{
-    border:hidden;
-    width:65%;
-    padding-left:70px;
-    margin-top:15px;
-    height:100%;
+
+/*body {
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}*/
+
+.container {
+    max-width: 1000px;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+    margin-left: auto;
+    margin-right: auto;
 }
-.header-information nav ul li{
-    display:inline;
-    margin-left:20px;
+
+#navbar {
+    --navbar-height: 64px;
+    position: fixed;
+    height: var(--navbar-height);
+    background-color: var(--navbar-bg-color);
+    left: 0;
+    right: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
-.header-information nav ul li a.active{
-    color:red;
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
 }
-.header-information nav ul li:hover{
-    border-bottom:4px solid red;
-    padding-bottom:5px;
-    transition:550ms;
+
+.navbar-item {
+    margin: 0.8em;
+    width: 100%;
 }
-.header-information nav ul li a{
-    text-decoration:none;
-    font-family:Sriracha;
-    line-height:.7;
-    font-size:1.6vw;
-    color:#0380F4;
-    font-weight:bold;
+
+.home-link,
+.navbar-link {
+    color: var(--navbar-text-color);
+    transition: color 0.2s ease-in-out;
+    text-decoration: none;
+    display: flex;
+    font-weight: 400;
+    align-items: center;
+    transition: background-color 0.2s ease-in-out,
+                color 0.2s ease-in-out;
+}
+
+.home-link:focus,
+.home-link:hover {
+    color: var(--navbar-text-color-focus);
+}
+
+.navbar-link {
+    justify-content: center;
+    width: 100%;
+    padding: 0.4em 0.8em;
+    border-radius: 5px;
+}
+
+.navbar-link:focus,
+.navbar-link:hover {
+    color: var(--navbar-text-color-focus);
+    background-color: var(--navbar-bg-contrast);
+}
+
+.navbar-logo {
+    background-color: var(--navbar-text-color-focus);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 0.5em;
+}
+
+.navbar-toggle {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.icon-bar {
+    display: block;
+    width: 25px;
+    height: 4px;
+    margin: 2px;
+    transition: background-color 0.2s ease-in-out,
+                transform 0.2s ease-in-out,
+                opacity 0.2s ease-in-out;
+    background-color: var(--navbar-text-color);
+}
+
+.navbar-toggle:focus .icon-bar,
+.navbar-toggle:hover .icon-bar {
+    background-color: var(--navbar-text-color-focus);
+}
+
+#navbar.opened .navbar-toggle .icon-bar:first-child,
+#navbar.opened .navbar-toggle .icon-bar:last-child {
+    position: absolute;
+    margin: 0;
+    width: 30px;
+}
+
+#navbar.opened .navbar-toggle .icon-bar:first-child {
+    transform: rotate(45deg);
+}
+
+#navbar.opened .navbar-toggle .icon-bar:nth-child(2) {
+    opacity: 0;
+}
+
+#navbar.opened .navbar-toggle .icon-bar:last-child {
+    transform: rotate(-45deg);
+}
+
+.navbar-menu {
+    position: fixed;
+    top: var(--navbar-height);
+    bottom: 0;
+    transition: opacity 0.2s ease-in-out,
+                visibility 0.2s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    left: 0;
+    right: 0;
+}
+
+#navbar.opened .navbar-menu {
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 1;
+    visibility: visible;
+}
+
+.navbar-links {
+    list-style-type: none;
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    background-color: var(--navbar-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 0;
+    right: 0;
+    margin: 1.4rem;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+#navbar.opened .navbar-links {
+    padding: 1em;
+    max-height: none;
+}
+
+@media screen and (min-width: 700px) {
+    .navbar-toggle {
+        display: none;
+    }
+    
+    #navbar .navbar-menu,
+    #navbar.opened .navbar-menu {
+        visibility: visible;
+        opacity: 1;
+        position: static;
+        display: block;
+        height: 100%;
+    }
+
+    #navbar .navbar-links,
+    #navbar.opened .navbar-links {
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+        position: static;
+        flex-direction: row;
+        list-style-type: none;
+        max-height: max-content;
+        width: 100%;
+        height: 100%;
+    }
+
+    #navbar .navbar-link:last-child {
+        margin-right: 0;
+    }
 }   
-div.index-content-wrapper{
-    display:flex;
-    border:hidden;
-    height:780px;
-    margin-top:20px;
+.about-section{
+    background:url("image/AriyibiBaseet.png") no-repeat left;
+    background-size:40%;
+    background-color:/*#fdfdfd*/;
+    padding:100px 0;
+    overflow:hidden;
 }
-div.index-content-wrapper .image{
-    border:2px solid white;
-    width:40%;
-    display:flex;
-    flex-direction:column;
-    padding:10px;
+.inner-container{
+    width:55%;
+    float:right;
+    background:transparent;
+    padding:150px;
 }
-div.index-content-wrapper .image h2{
-    text-align:center;
-    color:white;
-    font-size:1.4vw;
-    letter-spacing:2px;
+.inner-container h1{
+    margin-bottom:30px;
+    font-size:30px;
+    font-weight:900;
+    font-family:Sriracha;
     color:#0380F4;
-    font-family:Battlestar;
+    line-height:.7;
 }
-div.index-content-wrapper .image p{
+.text{
+    font-size:20px;
+    color:#545454;
+    line-height:30px;
+    text-align:justify;
+    margin-bottom:40px;
     font-family:Sriracha;
     color:white;
-    text-align:justify;
-    font-size:1.3vw;
-
 }
-div.index-content-wrapper .image .profile{
-    width:100%;
-    height:auto;
-    border:hidden;
-    height:auto;
-    padding:10px;
-}
-div.index-content-wrapper .image img{
-    border:hidden;
-    border-radius:50%;
-    width:60%;
-    height:300px;
-    display:block;
-    margin:40px auto;
-}
-div.index-content-wrapper .separator{
-    border:hidden;
-    width:20%;
-}
-div.index-content-wrapper .skills{
-    border:hidden;
-    width:40%;
-    padding:20px;
-    padding-top:60px;
+.skills{
     display:flex;
-    flex-direction:column;
-}
-div.index-content-wrapper .skills .img{
-    border:1px solid blue;
-    width:100%;
-    height:400px;
-}
-div.index-content-wrapper .skills .img img{
-    width:100%;
-    height:100%;
-}
-div.index-content-wrapper .skills .myskills-info{
-    border:hidden;
-    width:100%;
-    height:70px;
-    background:white;
-}
-div.index-content-wrapper .skills .social-links{
-    border:hidden;
-    width:100%;
-    height:170px;
-    background:white;
-}
-div.index-content-wrapper .skills .social-links {
-    color:#0380F4;
-    font-size:1.7vw;
-    text-align:center;
-    line-height:.7;
-    font-family:Battlestar;
+    justify-content:space-between;
+    font-weight:700;
+    font-size:13px;
 }
 
-div.index-content-wrapper .skills .myskills-info h3{
-    color:#0380F4;
-    font-size:2.3vw;
-    text-align:center;
-    line-height:.7;
-    font-family:Battlestar;
+@media screen and (max-width:1200px){
+    .inner-container{
+        padding:80px;
+    }
 }
 
+@media screen and (max-width:1000px){
+    .about-section{
+        background-size:100%;
+        padding:100px 40px;
+    }
+    .inner-container{
+        width:100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about-section{
+        padding:0px;
+    }
+    .inner-container{
+        padding:60px;
+    }
+    span{
+        display:block;
+    }
+}
 footer{
     border:1px solid white;
     width:100%;
@@ -220,48 +361,42 @@ footer .dev-option h4{
 </head>
 <body>
     <div class="page-wrapper">
-      <div class="header-information">
-    	<header>
-    		<h1>PORTFOLIO</h1>
-    	</header>   
-    	<nav>
-    		<ul>
-    			<li><a href="index.html">Home</a></li>
-    			<li><a href="knowledge.html">Knowledge</a></li>
-    			<li><a href="#" class="active">About Me
-    			<li><a href="experience.html">Experience</a></li>
-    			<li><a href="contact.html">Contact Me</a></li>
-    		</ul>
-    	</nav>   	
-      </div>
-        <div class="index-content-wrapper">
-        	<div class="image">
-                <img src="image/Ariyibi Baseet.jpg">
-            <div class="profile">
-            <h2>I'm Ariyibi Baseet Oluwadamilare<br><span style="font-size:1vw;color:#0380F4;">Frontend Developer</span></h2>
-                <p>
-                    A successful front end developer with 3+ years of experience who thrives in a dynamic and challenging production environment.Proven track record of providing, fast, accurate and effective code in response to requests from management to improve existing products or address critical issues with infrastructure. skilled in the following areas: javascript, Jquery, css3, html5, React js, Responsive Design UI/UX.
-                </p>
-            </div>
-            </div>
-            <div class="separator">
-                
-            </div>
-            <div class="skills">
-                <div class="myskills-info">
-                    <h3>MY SKILLS</h3>
-                </div>
-                <div class="img">
-                    <img src="image/skills.png">
-                </div>
-                <div class="social-links">
-                    <h3>MY SOCIAL LINKS</h3><p></p>
-                    <a href="https://github.com/Bastocurrency1999" target="_blank"><i class="fab fa-github" style="font-size:3.2vw;"></i></a>
-                    <a href="https://www.linkedin.com/in/baseet12345/" target="_blank"><i class="fab fa-linkedin" style="font-size:3.2vw;"></i></a>
-                    <a href="https://web.facebook.com/bastocurrency" target="_blank"><i class="fab fa-facebook-square" style="font-size:3.2vw;"></i></a>
-                </div>
-            </div>
+     <header id="navbar">
+        <nav class="navbar-container container">
+          <a href="/" class="home-link">
+            <div class="navbar-logo"></div>
+            ARIYIBI BASEET
+          </a>
+          <button type="button" class="navbar-toggle" aria-label="Open navigation menu">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <div class="navbar-menu">
+            <ul class="navbar-links">
+              <li class="navbar-item"><a class="navbar-link" href="index.html">Home</a></li>
+              <li class="navbar-item"><a class="navbar-link" href="#">About</a></li>
+              <li class="navbar-item"><a class="navbar-link" href="portfolio.html">Portfolio</a></li>
+              <li class="navbar-item"><a class="navbar-link" href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+    </header>
+   <div class="about-section">
+     <div class="inner-container">
+        <h1>About Me</h1>
+        <p class="text">
+             A successful front end developer with 3+ years of experience who thrives in a dynamic and challenging production environment.Proven track record of providing, fast, accurate and effective code in response to requests from management to improve existing products or address critical issues with infrastructure. skilled in the following areas: javascript, Jquery, css3, html5, React js, Responsive Design UI/UX.
+        </p>
+        <div class="skills">
+            <span>Template</span>
+            <span>Template</span>
+            <span>Template</span>
+            <span>Template</span>
+            <span>Template</span>
         </div>
+     </div>
+   </div>
     	<footer>
            <div class="newsletter">
         <form action="" name="signupform" id="signupform" onsubmit="processForm();">
