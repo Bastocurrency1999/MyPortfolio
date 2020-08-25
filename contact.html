@@ -320,59 +320,322 @@ textarea.contact-form-text{
 .contact-form-btn:hover{
     background:#2980b9;
 }
-footer{
-    border:1px solid white;
-    width:100%;
-    height:200px;
-    margin-top:20px;
-    background:transparent;
-    background:black;
-} 
-footer .newsletter{
-    border:hidden;
-    padding:20px;
-}
-footer .newsletter form{
-    color:white;
-    border:2px solid white;
-    width:65%;
-    margin:auto;
-    font-family:Sriracha;
-    font-size:2vw;
-    font-weight:bold;
-    padding:10px;
-}
-footer .newsletter form input{
-    padding:10px;
-    margin-left:5px;
-    width:30%;
-}
-footer .newsletter form input:hover{
-    outline:none;
-}
-footer .newsletter form input[type=submit]{
-    margin-left:5px;
-    width:20%;
-    font-size:1.1vw;
-    font-family:Sriracha;
-}
-footer .dev-option{
-     border:hidden;
-     padding:5px;
-}
-footer .dev-option h4{
-     border:2px solid white;
-     color:white;
-    font-size:1.5vw;
-    font-family:Sriracha;
-    text-align:center;
-}
 @media (max-width:375px){
     header h1{
         font-size:10px;
     }
     nav ul li{
         margin-left:2px;
+    }
+}
+footer{
+    border-top:2px solid black;
+    height:auto;
+    display:flex;
+    flex-direction:column;
+    background:black;
+    width:100%;
+    margin-top:150px;
+}
+footer .up-footer{
+    border-top:2px solid white;
+    width:100%;
+    display:flex;
+}
+footer .up-footer .left{
+border:2px solid black;
+width:24%;
+height:180px;
+}
+footer .up-footer .middle{
+border:2px solid black;
+width:54%;
+}
+footer .up-footer .middle h2{
+    text-align:center;
+    font-family:Sriracha;
+    line-height:.7;
+    color:#0380F4;
+}
+footer .up-footer .middle p{
+    text-align:center;
+    display:block;
+    margin-top:-10px;
+    font-size:18px;
+        font-family:Sriracha;
+        color:#0380F4;
+}
+footer .up-footer .middle form{
+    font-family:Sriracha;
+    font-weight:bold;
+    border:hidden;
+    display:inline-block;
+    margin-left:70px;
+    width:80%;
+    color:white;
+}
+footer .up-footer .middle form input[type=email]{
+        padding:5px;
+}
+footer .up-footer .middle form input[type=submit]{
+        font-family:Sriracha;
+        width:40%;
+        font-weight:bold;
+        letter-spacing:1px;
+        background:#0380F4;
+        border:2px solid #0380F4;
+        border-radius:4px;
+        color:white;
+}
+footer .up-footer .right{
+border:2px solid black;
+width:24%;
+
+}
+footer .down-footer{
+    border:hidden;
+    border-top:1px solid white;
+    width:100%;
+}
+footer .down-footer h4{
+    text-align:center;
+    font-family:Sriracha;
+    line-height:.7;
+    font-size:19px;
+    color:white;
+}
+@media (max-width:320px){
+    footer{
+        width:100%;
+    }
+    .none{
+        display:none;
+    }
+    footer .up-footer .middle{
+        width:100%;
+        box-sizing:border-box;
+        padding:5px;
+    }
+    footer .up-footer .middle h2{
+        font-size:15px;
+    }
+        footer .up-footer .middle p{
+        font-size:15px;
+    }
+    footer .up-footer .middle form{
+        font-size:14px;
+    }
+    footer .up-footer .middle form{
+        margin-left:5px;
+        margin-top:-10px;
+    }
+    footer .up-footer .middle form input[type=email]{
+        width:30%;
+        padding:0;
+        font-size:14px;
+    }
+    footer .up-footer .middle form input[type=submit]{
+        width:25%;
+        font-size:10px;
+        padding:0;
+    }
+    footer .down-footer h4{
+        font-size:12px;
+    }
+}
+@media (min-width:320px) and (max-width:375px){
+    footer{
+        width:100%;
+    }
+    .none{
+        display:none;
+    }
+    footer .up-footer .middle{
+        width:100%;
+        box-sizing:border-box;
+        padding:5px;
+    }
+    footer .up-footer .middle h2{
+        font-size:15px;
+    }
+        footer .up-footer .middle p{
+        font-size:15px;
+    }
+    footer .up-footer .middle form{
+        font-size:14px;
+    }
+    footer .up-footer .middle form{
+        margin-left:5px;
+        margin-top:-10px;
+    }
+    footer .up-footer .middle form input[type=email]{
+        width:30%;
+        padding:0;
+        font-size:14px;
+    }
+    footer .up-footer .middle form input[type=submit]{
+        width:25%;
+        font-size:10px;
+        padding:0;
+    }
+    footer .down-footer h4{
+        font-size:12px;
+    }
+}
+@media (min-width:375px) and (max-width:425px){
+    footer{
+        width:100%;
+    }
+    .none{
+        display:none;
+    }
+    footer .up-footer .middle{
+        width:100%;
+        box-sizing:border-box;
+        padding:5px;
+    }
+    footer .up-footer .middle h2{
+        font-size:15px;
+    }
+        footer .up-footer .middle p{
+        font-size:15px;
+    }
+    footer .up-footer .middle form{
+        font-size:14px;
+    }
+    footer .up-footer .middle form{
+        margin-left:50px;
+        margin-top:-10px;
+    }
+    footer .up-footer .middle form input[type=email]{
+        width:30%;
+        padding:0;
+        font-size:14px;
+    }
+    footer .up-footer .middle form input[type=submit]{
+        width:25%;
+        font-size:10px;
+        padding:0;
+    }
+    footer .down-footer h4{
+        font-size:12px;
+    }
+}
+@media (min-width:425px) and (max-width:551px){
+    footer{
+        width:100%;
+    }
+    .none{
+        display:none;
+    }
+    footer .up-footer .middle{
+        width:100%;
+        box-sizing:border-box;
+        padding:5px;
+    }
+    footer .up-footer .middle h2{
+        font-size:14px;
+    }
+        footer .up-footer .middle p{
+        font-size:15px;
+    }
+    footer .up-footer .middle form{
+        font-size:14px;
+    }
+    footer .up-footer .middle form{
+        margin-left:50px;
+        margin-top:-10px;
+    }
+    footer .up-footer .middle form input[type=email]{
+        width:30%;
+        padding:0;
+        font-size:14px;
+    }
+    footer .up-footer .middle form input[type=submit]{
+        width:25%;
+        font-size:10px;
+        padding:0;
+    }
+    footer .down-footer h4{
+        font-size:12px;
+    }
+}
+@media (min-width:551px) and (max-width:768px){
+    footer{
+        width:100%;
+    }
+    footer .up-footer .left{
+        height:100px;
+    }
+    footer .up-footer .middle{
+        width:100%;
+        box-sizing:border-box;
+        padding:5px;
+    }
+    footer .up-footer .middle h2{
+        font-size:14px;
+    }
+        footer .up-footer .middle p{
+        font-size:15px;
+    }
+    footer .up-footer .middle form{
+        font-size:14px;
+    }
+    footer .up-footer .middle form{
+        margin-left:50px;
+        margin-top:-10px;
+    }
+    footer .up-footer .middle form input[type=email]{
+        width:30%;
+        padding:0;
+        font-size:14px;
+    }
+    footer .up-footer .middle form input[type=submit]{
+        width:25%;
+        font-size:10px;
+        padding:0;
+    }
+    footer .down-footer h4{
+        font-size:12px;
+    }
+}
+@media (min-width:768px) and (max-width:1024px){
+    footer{
+        width:100%;
+    }
+    footer .up-footer .left{
+        height:100px;
+    }
+    footer .up-footer .middle{
+        width:100%;
+        box-sizing:border-box;
+        padding:5px;
+    }
+    footer .up-footer .middle h2{
+        font-size:14px;
+    }
+        footer .up-footer .middle p{
+        font-size:15px;
+    }
+    footer .up-footer .middle form{
+        font-size:14px;
+    }
+    footer .up-footer .middle form{
+        margin-left:120px;
+        margin-top:-10px;
+    }
+    footer .up-footer .middle form input[type=email]{
+        width:30%;
+        padding:0;
+        font-size:14px;
+    }
+    footer .up-footer .middle form input[type=submit]{
+        width:25%;
+        font-size:10px;
+        padding:0;
+    }
+    footer .down-footer h4{
+        font-size:12px;
     }
 }
 </style>
@@ -412,17 +675,23 @@ footer .dev-option h4{
         <input type="submit" name="" class="contact-form-btn">
     </form>
 </div>
-        <footer>
-           <div class="newsletter">
-        <form action="" name="signupform" id="signupform" onsubmit="processForm();">
-        Subscribe to our News letter<input type="email" name="email" id="email" placeholder="Your Email Address" required>
-        <input type="submit" value="Subscribe" class="submit" id="submit">
+<footer>
+    <div class="up-footer">
+        <div class="left none"></div>
+        <div class="middle">
+            <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+            <p>Click on the subscribe button and get latest <br>update about us</p>
+            <form>
+            Email-Address:&nbsp;<input type="email" name="">
+            <input type="submit" name="" value="Subscribe">
         </form>
-           </div>
-           <div class="dev-option">
-              <h4>Created By <a href="mailto:bastohenna@gmail.com">Ariyibi Baseet</a> &copy;CopyRight Reserved 2020</h4>
-           </div>
-        </footer>
+        </div>
+        <div class="right none"></div>
+    </div>
+    <div class="down-footer">
+    <h4>Created By <a href="mailto:bastohenna@gmail.com">Ariyibi Baseet</a> &copy;CopyRight Reserved 2020</h4>
+    </div>
+</footer>
     </div>
 <script>
   document.getElementById('signupform').addEventListener("submit",function(even){

@@ -3,16 +3,17 @@
     src:url("Ampoule.ttf") format("truetype");
 
     src:url("Battlestar.ttf") format("truetype");
-
-    src:url("Sriracha.ttf") format("truetype");
+    
+    font-family:Lato;
+    src:url("Lato.ttf") format("truetype");
 }
 
 body{
     margin:0;
     width:100%;
     height:100vh;
-    background-image:url("Image/index_bg.jpg");
-    background-size:cover;
+    /*background-image:url("photo-1559242550-bdfaa5081d95.jpg");*/
+    background:black;
 }
 *{
     box-sizing:border-box;
@@ -34,7 +35,6 @@ div.page-wrapper .header-information{
     --navbar-text-color-focus: white;
     --navbar-bg-contrast: hsl(0, 0%, 25%);
 }
-
 /** {
     box-sizing: border-box;
     margin: 0;
@@ -64,9 +64,11 @@ html {
     position: fixed;
     height: var(--navbar-height);
     background-color: var(--navbar-bg-color);
+    top:0;
     left: 0;
     right: 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    margin-bottom:20px;
 }
 
 .navbar-container {
@@ -236,142 +238,112 @@ html {
         margin-right: 0;
     }
 }
-div.index-content-wrapper{
-    display:flex;
+.about-me-section{
     border:hidden;
-    height:780px;
-    margin-top:20px;
-}
-div.index-content-wrapper .image{
-    border:2px solid white;
-    width:40%;
+    height:150vh;
     display:flex;
     flex-direction:column;
+    margin-top:130px;
+    padding:40px;
+    box-sizing:border-box;
+}
+.about-me-section .about-me{
+    border:hidden;
     padding:10px;
 }
-div.index-content-wrapper .image h2{
-    text-align:center;
+.about-me-section .about-me h1{
     color:white;
-    font-size:1.4vw;
+    text-align:center;
+    font-family:Battlestar;
     letter-spacing:2px;
-    color:#0380F4;
-    font-family:Battlestar;
+    font-size:28px;
 }
-div.index-content-wrapper .image p{
-    font-family:Sriracha;
+.about-me-section .about-me h1 span.l{
+    font-size:38px;
+}
+.about-me-section .about-me p{
     color:white;
-    text-align:justify;
-    font-size:1.3vw;
-
-}
-div.index-content-wrapper .image .profile{
-    width:100%;
-    height:auto;
-    border:hidden;
-    height:auto;
-    padding:10px;
-}
-div.index-content-wrapper .image img{
-    border:hidden;
-    border-radius:50%;
-    width:60%;
-    height:300px;
+    text-align:center;
     display:block;
-    margin:40px auto;
-}
-div.index-content-wrapper .separator{
-    border:hidden;
-    width:20%;
-}
-div.index-content-wrapper .skills{
-    border:hidden;
-    width:40%;
-    padding:20px;
-    padding-top:60px;
-    display:flex;
-    flex-direction:column;
-}
-div.index-content-wrapper .skills .img{
-    border:1px solid blue;
-    width:100%;
-    height:400px;
-}
-div.index-content-wrapper .skills .img img{
-    width:100%;
-    height:100%;
-}
-div.index-content-wrapper .skills .myskills-info{
-    border:hidden;
-    width:100%;
-    height:70px;
-    background:white;
-}
-div.index-content-wrapper .skills .social-links{
-    border:hidden;
-    width:100%;
-    height:170px;
-    background:white;
-}
-div.index-content-wrapper .skills .social-links {
-    color:#0380F4;
-    font-size:1.7vw;
-    text-align:center;
+    margin:-10px;
+    font-size:28px;
+    font-family:monospace;
     line-height:.7;
-    font-family:Battlestar;
 }
-
-div.index-content-wrapper .skills .myskills-info h3{
-    color:#0380F4;
-    font-size:2.3vw;
-    text-align:center;
-    line-height:.7;
-    font-family:Battlestar;
+.about-me-section .about-me a{
+    text-decoration:none;
 }
-
-footer{
-    border:1px solid white;
-    width:100%;
-    height:200px;
-    margin-top:20px;
-    background:transparent;
-    background:black;
-} 
-footer .newsletter{
-    border:hidden;
-    padding:20px;
-}
-footer .newsletter form{
-    color:white;
-    border:2px solid white;
-    width:65%;
+.about-me-section .about-me a input[type=submit]{
     margin:auto;
-    font-family:Sriracha;
-    font-size:2vw;
+    display:block;
+    margin-top:25px;
+    width:18%;
+    font-size:20px;
     font-weight:bold;
+    font-family:monospace;
     padding:10px;
-}
-footer .newsletter form input{
-    padding:10px;
-    margin-left:5px;
-    width:30%;
-}
-footer .newsletter form input:hover{
+    background:#0380F4;
+    border:none;
     outline:none;
+    border-radius:10px;
+    color:white;
+    cursor:pointer;
+/*    letter-spacing:1px;*/
+    animation:widthy 2s infinite;
+    animation-timing-function:linear;
 }
-footer .newsletter form input[type=submit]{
-    margin-left:5px;
-    width:20%;
-    font-size:1.1vw;
-    font-family:Sriracha;
+@keyframes widthy{
+    0%{
+        width:18%;
+    }
+    100%{
+        width:19%;letter-spacing:1px;background:red;
+    }
 }
-footer .dev-option{
-     border:hidden;
-     padding:5px;
+.about-me-section .social-links{
+    border:hidden;
+    padding:10px 100px;
+    margin-top:20px;
 }
-footer .dev-option h4{
-     border:2px solid white;
-     color:white;
-    font-size:1.5vw;
-    font-family:Sriracha;
+.about-me-section .social-links h2{
+    line-height:.7;
     text-align:center;
+    font-family:Battlestar;
+    letter-spacing:2px;
+    font-size:28px;
+    color:#0380F4;
+    letter-spacing:2px;
+}
+.about-me-section .social-links p{
+    text-align:justify;
+    color:white;
+    font-size:20px;
+    font-family:Sriracha;
+    font-family:monospace;
+}
+.about-me-section .social-links .skills{
+    border:hidden;
+    width:27%;
+    margin:auto;
+    display:flex;
+}
+.about-me-section .social-links .skills i{
+    text-align:center;
+    color:white;
+    font-size:40px;
+    margin:0px 10px;
+    color:#0380F4;
+}
+.about-me-section .testimonials{
+    border:2px solid white;
+    height:250px;
+    display:flex;
+}
+.about-me-section .testimonials .testimonials-images{
+    border:2px solid white;
+    width:300%;
+    margin:10px;
+}
+.about-me-section .contact-links{
+    border:2px solid white;
 }
