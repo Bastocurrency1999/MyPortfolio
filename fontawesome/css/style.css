@@ -14,6 +14,21 @@ body{
     height:100vh;
     /*background-image:url("photo-1559242550-bdfaa5081d95.jpg");*/
     background:black;
+    animation:10s changing-colour infinite;
+}
+@keyframes changing-colour{
+    25%{
+        background:black;
+    }
+    25%{
+        background:#2527AD;
+    }
+    50%{
+        background:maroon;
+    }
+    100%{
+        background:#2E151B;
+    }
 }
 *{
     box-sizing:border-box;
@@ -261,7 +276,7 @@ html {
 .about-me-section .about-me h1 span.l{
     font-size:38px;
 }
-.about-me-section .about-me p{
+.about-me-section .about-me p.frontend{
     color:white;
     text-align:center;
     display:block;
@@ -269,6 +284,7 @@ html {
     font-size:28px;
     font-family:monospace;
     line-height:.7;
+    color:#0380F4;
 }
 .about-me-section .about-me a{
     text-decoration:none;
@@ -297,7 +313,7 @@ html {
         width:18%;
     }
     100%{
-        width:19%;letter-spacing:1px;background:red;
+        width:19%;letter-spacing:1px;
     }
 }
 .about-me-section .social-links{
@@ -318,7 +334,6 @@ html {
     text-align:justify;
     color:white;
     font-size:20px;
-    font-family:Sriracha;
     font-family:monospace;
 }
 .about-me-section .social-links .skills{
@@ -344,6 +359,28 @@ html {
     width:300%;
     margin:10px;
 }
-.about-me-section .contact-links{
-    border:2px solid white;
+.about-me-section .hire{
+    border:hidden;
+    margin-top:20px;
+}
+.about-me-section .hire h3{
+    line-height:.7;
+    text-align:center;
+    font-family:Battlestar;
+    letter-spacing:2px;
+    font-size:28px;
+    color:#0380F4;
+    letter-spacing:2px;
+}
+.about-me-section .hire .links{
+    border:hidden;
+    width:24%;
+    margin:auto;
+}
+.about-me-section .hire .links a i{
+    font-size:40px;
+    text-align:center;
+    margin-right:auto;
+    margin:0 10px;
+    color:white;
 }
