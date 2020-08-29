@@ -21,7 +21,7 @@ html {
     height: var(--navbar-height);
     background-color: var(--navbar-bg-color);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-    margin-bottom:180px;
+    margin-bottom:100px;
 }
 
 .navbar-container {

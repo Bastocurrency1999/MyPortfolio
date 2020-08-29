@@ -1,7 +1,7 @@
 @import "navbar.css";
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 font-family: 'Righteous', cursive;
-/*@import "about.css";*/
+*//*@import "about.css";*/
 /* local fonts */
 @font-face{
     src:url("Ampoule.ttf") format("truetype");
@@ -31,6 +31,7 @@ div.about-me-section{
     border:hidden;
     min-height:100vh;
     display:flex;
+    margin-top:100px;
     flex-direction:column;
 }
 /* about me start*/
@@ -47,7 +48,7 @@ div.about-me-section .about-me .heading{
 }
 div.about-me-section .about-me .heading h1{
     font-family:Battlestar;
-    font-family: 'Righteous', cursive;
+ /*   font-family: 'Righteous', cursive;*/
     letter-spacing:2px;
     color:lightgray;
     font-size:2.5vw;
@@ -132,7 +133,7 @@ div.about-me-section .myskills .heading{
 }
 div.about-me-section .myskills .heading h1{
     font-family:Battlestar;
-    font-family: 'Righteous', cursive;
+/*    font-family: 'Righteous', cursive;*/
     letter-spacing:2px;
     color:lightgray;
     text-transform:uppercase;
@@ -184,7 +185,7 @@ div.about-me-section .testimonies-section .heading{
 }
 div.about-me-section .testimonies-section .heading h1{
     font-family:Battlestar;
-    font-family: 'Righteous', cursive;
+/*    font-family: 'Righteous', cursive;*/
     letter-spacing:2px;
     color:lightgray;
     font-size:2vw;
@@ -248,7 +249,7 @@ div.about-me-section .hire .heading{
 }
 div.about-me-section .hire .heading h1{
     font-family:Battlestar;
-    font-family: 'Righteous', cursive;
+/*    font-family: 'Righteous', cursive;*/
     letter-spacing:2px;
     color:lightgray;
     font-size:2vw;
