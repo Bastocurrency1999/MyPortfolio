@@ -1,4 +1,6 @@
 @import "navbar.css";
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+font-family: 'Righteous', cursive;
 /*@import "about.css";*/
 /* local fonts */
 @font-face{
@@ -129,6 +131,7 @@ div.about-me-section .myskills .heading{
 }
 div.about-me-section .myskills .heading h1{
     font-family:Battlestar;
+    font-family: 'Righteous', cursive;
     letter-spacing:2px;
     color:lightgray;
     text-transform:uppercase;

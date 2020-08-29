@@ -4,10 +4,13 @@ border:hidden;
 }
 .heading h1{
 	font-size:18px;
+	text-shadow:2px 2px 2px black;
 }
 .about-me-section{
-	width:90%;
+	width:100%;
 	border:hidden;
+	padding:5px;
+	box-sizing:border-box;
 }
 .about-me-section .about-picture {
 
@@ -66,16 +69,19 @@ border:hidden;
 }
 
 
-@media (min-width:320px) and (max-width:375px){
+@media(min-width:321px) and (max-width:374px){
 .heading{
 border:hidden;
 }
 .heading h1{
 	font-size:18px;
+	text-shadow:2px 2px 2px black;
 }
 .about-me-section{
-	width:90%;
+	width:100%;
 	border:hidden;
+	padding:5px;
+	box-sizing:border-box;
 }
 .about-me-section .about-picture {
 
@@ -136,14 +142,162 @@ border:hidden;
 @media (min-width:375px) and (max-width:425px){
 .heading{
 border:hidden;
+text-shadow:2px 2px 2px black;
 }
 .heading h1{
 	font-size:18px;
 }
 .about-me-section{
-	width:90%;
+	width:100%;
+	border:hidden;
+	padding:5px;
+	box-sizing:border-box;
+}
+
+.about-me-section .about-picture {
+
+}
+.about-me-section .about-picture .picture{
+	width:200px;
+	height:200px;
+}
+.about-me-section .about-information{
+	width:100%;
 	border:hidden;
 }
+.about-me-section .about-information h1{
+	font-size:20px;
+}
+.about-me-section .about-information p.first-para{
+	font-family:monospace;
+	font-weight:bold;
+	text-align:center;
+	margin-top: -14px;
+	font-size:21px;
+	color:white;
+}
+.about-me-section .about-information .first-para{
+	border:hidden;
+}
+.about-me-section .about-information .second-para{
+   width:100%;
+   border:hidden;
+   box-sizing:border-box;
+}
+.about-me-section .about-information p.second-para{
+	font-family:monospace;
+	font-weight:bold;
+	margin-top: -14px;
+	padding:5px;
+	box-sizing:border-box;
+	color:white;
+	text-align:justify;
+	font-size:15px;
+}
+.about-me-section .about-information .social-links{
+   width:100%;
+   border:hidden;
+	margin-top: -14px;
+	display:flex;
+	justify-content:center;
+	padding:3px;
+	box-sizing:border-box;
+}
+.about-me-section .about-information .social-links a i{
+    margin-left:10px;
+    font-size:20px;
+    color:white;
+}
+}
+
+@media (min-width:425px) and (max-width:551px){
+.heading{
+border:hidden;
+}
+.heading h1{
+	font-size:18px;
+	text-shadow:2px 2px 2px black;
+}
+.about-me-section{
+	width:100%;
+	border:hidden;
+	padding:5px;
+	box-sizing:border-box;
+}
+
+.about-me-section .about-picture {
+
+}
+.about-me-section .about-picture .picture{
+	width:200px;
+	height:200px;
+}
+.about-me-section .about-information{
+	width:100%;
+	border:hidden;
+}
+.about-me-section .about-information h1{
+	font-size:20px;
+}
+.about-me-section .about-information p.first-para{
+	font-family:monospace;
+	font-weight:bold;
+	text-align:center;
+	margin-top: -14px;
+	font-size:21px;
+	color:white;
+}
+.about-me-section .about-information .first-para{
+	border:hidden;
+}
+.about-me-section .about-information .second-para{
+   width:100%;
+   border:hidden;
+   box-sizing:border-box;
+}
+.about-me-section .about-information p.second-para{
+	font-family:monospace;
+	font-weight:bold;
+	margin-top: -14px;
+	padding:5px;
+	box-sizing:border-box;
+	color:white;
+	text-align:justify;
+	font-size:15px;
+}
+.about-me-section .about-information .social-links{
+   width:100%;
+   border:hidden;
+	margin-top: -14px;
+	display:flex;
+	justify-content:center;
+	padding:3px;
+	box-sizing:border-box;
+}
+.about-me-section .about-information .social-links a i{
+    margin-left:10px;
+    font-size:20px;
+    color:white;
+}
+}
+
+
+@media (min-width:551px) and (max-width:768px){
+.heading{
+border:hidden;
+}
+.heading h1{
+	font-size:18px;
+	text-shadow:2px 2px 2px black;
+}
+.about-me-section{
+	width:90%;
+	border:hidden;
+	padding:5px;
+	box-sizing:border-box;
+	margin-left:42px;
+}
+
 .about-me-section .about-picture {
 
 }
