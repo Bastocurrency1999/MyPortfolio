@@ -1,0 +1,310 @@
+@media (max-width:320px){
+body{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:auto;
+}
+*{
+    box-sizing:border-box;
+    outline:none;
+}
+label{
+    font-family:monospace;
+    font-weight:bold;
+    color:white;
+    font-size:20px;
+    text-shadow:2px 2px 2px black;
+}
+span{
+    color:red;
+}	
+.contact-section{
+	width:90%;
+}
+.contact-section .Mycontact {
+	border:hidden;
+	width:100%;
+}
+.contact-section .Mycontact p{
+	font-size:14px;
+}
+.contact-section .heading h1{
+	font-size:20px;
+}
+.contact-section .form-wrapper form{
+	width:100%;
+}
+.contact-section .form-wrapper form input[type=text]{
+	font-size:18px;
+}
+.contact-section .form-wrapper form input[type=email]{
+	font-size:18px;
+}
+.contact-section .form-wrapper form textarea{
+	font-size:18px;
+}
+.contact-section .social-links a i{
+	font-size:30px;
+}
+}
+
+
+@media (min-width:320px) and (max-width:375px){
+body{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:auto;
+}
+*{
+    box-sizing:border-box;
+    outline:none;
+}
+label{
+    font-family:monospace;
+    font-weight:bold;
+    color:white;
+    font-size:20px;
+    text-shadow:2px 2px 2px black;
+}
+span{
+    color:red;
+}	
+.contact-section{
+	width:90%;
+}
+.contact-section .Mycontact {
+	border:hidden;
+	width:100%;
+}
+.contact-section .Mycontact p{
+	font-size:14px;
+}
+.contact-section .heading h1{
+	font-size:20px;
+}
+.contact-section .form-wrapper form{
+	width:100%;
+}
+.contact-section .form-wrapper form input[type=text]{
+	font-size:18px;
+}
+.contact-section .form-wrapper form input[type=email]{
+	font-size:18px;
+}
+.contact-section .form-wrapper form textarea{
+	font-size:18px;
+}
+.contact-section .social-links a i{
+	font-size:30px;
+}
+}
+
+
+@media (min-width:375px) and (max-width:425px){
+body{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:auto;
+}
+*{
+    box-sizing:border-box;
+    outline:none;
+}
+label{
+    font-family:monospace;
+    font-weight:bold;
+    color:white;
+    font-size:20px;
+    text-shadow:2px 2px 2px black;
+}
+span{
+    color:red;
+}	
+.contact-section{
+	width:90%;
+}
+.contact-section .Mycontact {
+	border:hidden;
+	width:100%;
+}
+.contact-section .Mycontact p{
+	font-size:14px;
+}
+.contact-section .heading h1{
+	font-size:20px;
+}
+.contact-section .form-wrapper form{
+	width:100%;
+}
+.contact-section .form-wrapper form input[type=text]{
+	font-size:18px;
+}
+.contact-section .form-wrapper form input[type=email]{
+	font-size:18px;
+}
+.contact-section .form-wrapper form textarea{
+	font-size:18px;
+}
+.contact-section .social-links a i{
+	font-size:30px;
+}
+}
+
+@media (min-width:425px) and (max-width:551px){
+body{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:auto;
+}
+*{
+    box-sizing:border-box;
+    outline:none;
+}
+label{
+    font-family:monospace;
+    font-weight:bold;
+    color:white;
+    font-size:20px;
+    text-shadow:2px 2px 2px black;
+}
+span{
+    color:red;
+}	
+.contact-section{
+	width:90%;
+}
+.contact-section .Mycontact {
+	border:hidden;
+	width:100%;
+}
+.contact-section .Mycontact p{
+	font-size:14px;
+}
+.contact-section .heading h1{
+	font-size:24px;
+}
+.contact-section .form-wrapper form{
+	width:100%;
+}
+.contact-section .form-wrapper form input[type=text]{
+	font-size:19px;
+}
+.contact-section .form-wrapper form input[type=email]{
+	font-size:19px;
+}
+.contact-section .form-wrapper form textarea{
+	font-size:19px;
+}
+.contact-section .social-links a i{
+	font-size:30px;
+}
+}
+
+
+@media (min-width:551px) and (max-width:768px){
+body{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:auto;
+}
+*{
+    box-sizing:border-box;
+    outline:none;
+}
+label{
+    font-family:monospace;
+    font-weight:bold;
+    color:white;
+    font-size:20px;
+    text-shadow:2px 2px 2px black;
+}
+span{
+    color:red;
+}	
+.contact-section{
+	width:70%;
+}
+.contact-section .Mycontact {
+	border:hidden;
+	width:100%;
+}
+.contact-section .Mycontact p{
+	font-size:14px;
+}
+.contact-section .heading h1{
+	font-size:24px;
+}
+.contact-section .form-wrapper form{
+	width:100%;
+}
+.contact-section .form-wrapper form input[type=text]{
+	font-size:19px;
+}
+.contact-section .form-wrapper form input[type=email]{
+	font-size:19px;
+}
+.contact-section .form-wrapper form textarea{
+	font-size:19px;
+}
+.contact-section .social-links a i{
+	font-size:30px;
+}
+}
+
+
+
+@media (min-width:768px) and (max-width:1024px){
+body{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:auto;
+}
+*{
+    box-sizing:border-box;
+    outline:none;
+}
+label{
+    font-family:monospace;
+    font-weight:bold;
+    color:white;
+    font-size:20px;
+    text-shadow:2px 2px 2px black;
+}
+span{
+    color:red;
+}	
+.contact-section{
+	width:60%;
+}
+.contact-section .Mycontact {
+	border:hidden;
+	width:100%;
+}
+.contact-section .Mycontact p{
+	font-size:14px;
+}
+.contact-section .heading h1{
+	font-size:24px;
+}
+.contact-section .form-wrapper form{
+	width:100%;
+}
+.contact-section .form-wrapper form input[type=text]{
+	font-size:19px;
+}
+.contact-section .form-wrapper form input[type=email]{
+	font-size:19px;
+}
+.contact-section .form-wrapper form textarea{
+	font-size:19px;
+}
+.contact-section .social-links a i{
+	font-size:30px;
+}
+}

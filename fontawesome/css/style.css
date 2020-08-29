@@ -1,5 +1,5 @@
 @import "navbar.css";
-@import "about.css";
+/*@import "about.css";*/
 /* local fonts */
 @font-face{
     src:url("Ampoule.ttf") format("truetype");
@@ -40,14 +40,15 @@ div.about-me-section .about-me{
     flex-direction:column;
 }
 div.about-me-section .about-me .heading{
-    border:hidden;
     width:100%;
+    height:auto;
 }
 div.about-me-section .about-me .heading h1{
     font-family:Battlestar;
     letter-spacing:2px;
     color:lightgray;
     font-size:2.5vw;
+    text-transform:uppercase;
     text-align:center;
     text-shadow:5px 5px 5px black;
 }
@@ -69,6 +70,7 @@ div.about-me-section .about-me .frontend-paragraph p{
     font-weight:bolder;
     font-family:monospace;
     font-size:2vw;
+    text-transform:uppercase;
     line-height:.7;
     text-align:center;
     letter-spacing:-1px;
@@ -129,6 +131,7 @@ div.about-me-section .myskills .heading h1{
     font-family:Battlestar;
     letter-spacing:2px;
     color:lightgray;
+    text-transform:uppercase;
     font-size:2vw;
     text-align:center;
     text-shadow:5px 5px 5px black;    
@@ -163,8 +166,7 @@ div.about-me-section .myskills .skills i{
 }
 div.about-me-section .myskills .skills i:hover{
     color:#0380F4;
-    font-size:42px;
-    transition:900ms;
+    transition:400ms;
 }
 /* myskills end */
 
@@ -181,6 +183,7 @@ div.about-me-section .testimonies-section .heading h1{
     letter-spacing:2px;
     color:lightgray;
     font-size:2vw;
+    text-transform:uppercase;
     text-align:center;
     text-shadow:5px 5px 5px black;     
 }
@@ -199,8 +202,7 @@ div.about-me-section .testimonies-section .testimonies .testimonies-image{
     display:flex;
     flex-direction:column;
 }
-div.about-me-section .testimonies-section .testimonies .testimonies-image a 
-img{
+div.about-me-section .testimonies-section .testimonies .testimonies-image a img{
     width:100%;
     height:100%;
     border-radius:50%;
@@ -244,6 +246,7 @@ div.about-me-section .hire .heading h1{
     letter-spacing:2px;
     color:lightgray;
     font-size:2vw;
+    text-transform:uppercase;
     text-align:center;
     text-shadow:5px 5px 5px black;      
 }
@@ -262,8 +265,7 @@ div.about-me-section .hire .social-links a i{
 }
 div.about-me-section .hire .social-links a i:hover{
     color:#0380F4;
-    font-size:42px;
-    transition:900ms;
+    transition:400ms;
 }
 
 /* hire end */

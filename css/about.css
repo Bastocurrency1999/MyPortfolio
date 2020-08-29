@@ -1,0 +1,88 @@
+@font-face{
+    src:url("Battlestar.ttf") format("truetype");
+}
+body{
+    margin:0;
+    padding:0;
+}
+.heading{
+	border:hidden;
+    margin-top:40px;
+}
+.heading h1{
+	text-align:center;
+	font-family:Battlestar;
+	font-size:28px;
+	color:lightgray;
+}
+.about-me-section{
+	border:hidden;
+	display:flex;
+	flex-direction:column;
+}
+.about-me-section .about-picture{
+    border:hidden;
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+.about-me-section .about-picture .picture{
+    border:hidden;
+    height:300px;
+    width:300px;
+}
+.about-me-section .about-picture .picture img{
+	width:100%;
+	height:100%;
+	border-radius:50%;
+}
+.about-me-section .about-information{
+	border:hidden;
+   display:flex;
+   flex-direction:column;
+   width:100%;
+}
+.about-me-section .about-information h1{
+	color:lightgray;
+	font-family:Battlestar;
+	font-size:25px;
+	text-align:center;
+}
+.about-me-section .about-information .first-para{
+   width:100%;
+   border:hidden;
+}
+.about-me-section .about-information p.first-para{
+	font-family:monospace;
+	font-weight:bold;
+	text-align:center;
+	margin-top: -14px;
+	font-size:21px;
+	color:white;
+}
+.about-me-section .about-information .second-para{
+   width:100%;
+   border:hidden;
+}
+.about-me-section .about-information p.second-para{
+	font-family:monospace;
+	font-weight:bold;
+	margin-top: -14px;
+	padding:0 200px;
+	box-sizing:border-box;
+	color:white;
+	text-align:justify;
+}
+.about-me-section .about-information .social-links{
+   width:100%;
+   border:hidden;
+	margin-top: -14px;
+	display:flex;
+	justify-content:center;
+	padding:30px;
+}
+.about-me-section .about-information .social-links a i{
+    margin-left:20px;
+    font-size:30px;
+    color:white;
+}

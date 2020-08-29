@@ -1,0 +1,474 @@
+@media(max-width:320px){
+body{
+  margin:0;
+  padding:0;
+  width:100%;
+  box-sizing:border-box;
+  background-size:cover;
+}
+/**/
+hr{
+    width:20%;
+}
+/**/
+/* --------------- media queries of navbar start (margin bottom)-----------------*/
+#navbar{
+	margin-bottom:50px;
+}
+/* --------------- media queries of navbar ends (margin bottom)-----------------*/
+div.about-me-section{
+	margin-top:20px;
+}
+/**/
+div.about-me-section .about-me .heading{
+   width:100%;
+}
+/**/
+/**/
+div.about-me-section .about-me .heading h1{
+	font-size:16px;
+	line-height:20px;
+}
+/**/
+div.about-me-section .about-me .frontend-paragraph p{
+	font-size:14px;
+}
+/**/
+div.about-me-section .about-me .btn a button{
+	font-size:12px;
+}
+/**/
+div.about-me-section .myskills .heading h1{
+	font-size:16px;
+}
+/**/
+/**/
+div.about-me-section .myskills .myskills-paragraph{
+	padding:0px 10px;
+}
+/**/
+div.about-me-section .myskills .myskills-paragraph p{
+	font-size:14px;
+}
+/**/
+div.about-me-section .myskills .skills i{
+	font-size:24px;
+    margin:0px 5px;
+}
+/**/
+div.about-me-section .testimonies-section .heading{
+	margin-top:20px;
+}
+div.about-me-section .testimonies-section .heading h1{
+	font-size:16px;
+}
+/**/
+div.about-me-section .testimonies-section .testimonies .testimonies-image{
+    width:260px;
+    margin:0px 20px;
+    height:400px;
+}
+div.about-me-section .testimonies-section .testimonies .testimonies-image a img{
+	width:90%;
+	height:90%;
+	margin:auto;
+}
+div.about-me-section .testimonies-section .testimonies .testimonies-image .testimonies-text{
+	margin-top:-30px;
+}
+/**/
+div.about-me-section .hire{
+	margin-top:5px;
+}
+div.about-me-section .hire .heading h1{
+	font-size:16px;
+}
+div.about-me-section .hire .social-links a i{
+	font-size:20px;
+}
+div.about-me-section .hire .social-links{
+	margin-bottom:20px;
+}
+}
+
+
+@media(min-width:320px) and (max-width:375px){
+body{
+  margin:0;
+  padding:0;
+  width:100%;
+  box-sizing:border-box;
+  background-size:cover;
+}
+/**/
+hr{
+    width:20%;
+}
+/**/
+/* --------------- media queries of navbar start (margin bottom)-----------------*/
+#navbar{
+	margin-bottom:50px;
+}
+/* --------------- media queries of navbar ends (margin bottom)-----------------*/
+div.about-me-section{
+	margin-top:20px;
+}
+/**/
+div.about-me-section .about-me .heading{
+   width:100%;
+}
+/**/
+/**/
+div.about-me-section .about-me .heading h1{
+	font-size:16px;
+	line-height:20px;
+}
+/**/
+div.about-me-section .about-me .frontend-paragraph p{
+	font-size:14px;
+}
+/**/
+div.about-me-section .about-me .btn a button{
+	font-size:12px;
+}
+/**/
+div.about-me-section .myskills .heading h1{
+	font-size:16px;
+}
+/**/
+/**/
+div.about-me-section .myskills .myskills-paragraph{
+	padding:0px 10px;
+}
+/**/
+div.about-me-section .myskills .myskills-paragraph p{
+	font-size:14px;
+}
+/**/
+div.about-me-section .myskills .skills i{
+	font-size:24px;
+    margin:0px 5px;
+}
+/**/
+div.about-me-section .testimonies-section .heading{
+	margin-top:20px;
+}
+div.about-me-section .testimonies-section .heading h1{
+	font-size:16px;
+}
+/**/
+div.about-me-section .testimonies-section .testimonies .testimonies-image{
+    width:260px;
+    margin:0px 20px;
+    height:400px;
+}
+div.about-me-section .testimonies-section .testimonies .testimonies-image a img{
+	width:90%;
+	height:90%;
+	margin:auto;
+}
+div.about-me-section .testimonies-section .testimonies .testimonies-image .testimonies-text{
+	margin-top:-30px;
+}
+/**/
+div.about-me-section .hire{
+	margin-top:5px;
+}
+div.about-me-section .hire .heading h1{
+	font-size:16px;
+}
+div.about-me-section .hire .social-links a i{
+	font-size:20px;
+}
+div.about-me-section .hire .social-links{
+	margin-bottom:20px;
+}
+}
+
+@media(min-width:375px) and (max-width:425px){
+body{
+  margin:0;
+  padding:0;
+  width:100%;
+  box-sizing:border-box;
+  background-size:cover;
+}
+/**/
+hr{
+    width:20%;
+}
+/**/
+/* --------------- media queries of navbar start (margin bottom)-----------------*/
+#navbar{
+	margin-bottom:50px;
+}
+/* --------------- media queries of navbar ends (margin bottom)-----------------*/
+div.about-me-section{
+	margin-top:20px;
+}
+/**/
+div.about-me-section .about-me .heading{
+   width:100%;
+   box-sizing:border-box;
+   border:2px solid black;
+}
+/**/
+/**/
+div.about-me-section .about-me .heading h1{
+	font-size:18px;
+	line-height:20px;
+}
+/**/
+div.about-me-section .about-me .frontend-paragraph p{
+	font-size:16px;
+}
+/**/
+div.about-me-section .about-me .btn a button{
+	font-size:15px;
+}
+/**/
+div.about-me-section .myskills .heading h1{
+	font-size:16px;
+}
+/**/
+/**/
+div.about-me-section .myskills .myskills-paragraph{
+	padding:0px 10px;
+}
+/**/
+div.about-me-section .myskills .myskills-paragraph p{
+	font-size:14px;
+}
+/**/
+div.about-me-section .myskills .skills i{
+	font-size:24px;
+    margin:0px 5px;
+}
+/**/
+div.about-me-section .testimonies-section .heading{
+	margin-top:20px;
+}
+div.about-me-section .testimonies-section .heading h1{
+	font-size:16px;
+}
+/**/
+div.about-me-section .testimonies-section .testimonies .testimonies-image{
+    width:260px;
+    margin:0px 20px;
+    height:400px;
+}
+div.about-me-section .testimonies-section .testimonies .testimonies-image a img{
+	width:90%;
+	height:90%;
+	margin:auto;
+}
+div.about-me-section .testimonies-section .testimonies .testimonies-image .testimonies-text{
+	margin-top:-30px;
+}
+/**/
+div.about-me-section .hire{
+	margin-top:5px;
+}
+div.about-me-section .hire .heading h1{
+	font-size:16px;
+}
+div.about-me-section .hire .social-links a i{
+	font-size:20px;
+}
+div.about-me-section .hire .social-links{
+	margin-bottom:20px;
+}
+}
+
+
+@media(min-width:425px) and (max-width:551px){
+body{
+  margin:0;
+  padding:0;
+  width:100%;
+  box-sizing:border-box;
+  background-size:cover;
+}
+/**/
+hr{
+    width:20%;
+}
+/**/
+/* --------------- media queries of navbar start (margin bottom)-----------------*/
+#navbar{
+	margin-bottom:50px;
+}
+/* --------------- media queries of navbar ends (margin bottom)-----------------*/
+div.about-me-section{
+	margin-top:20px;
+}
+/**/
+div.about-me-section .about-me .heading{
+   width:100%;
+   box-sizing:border-box;
+   border:2px solid black;
+}
+/**/
+/**/
+div.about-me-section .about-me .heading h1{
+	font-size:18px;
+	line-height:20px;
+}
+/**/
+div.about-me-section .about-me .frontend-paragraph p{
+	font-size:16px;
+}
+/**/
+div.about-me-section .about-me .btn a button{
+	font-size:15px;
+}
+/**/
+div.about-me-section .myskills .heading h1{
+	font-size:16px;
+}
+/**/
+/**/
+div.about-me-section .myskills .myskills-paragraph{
+	padding:0px 10px;
+}
+/**/
+div.about-me-section .myskills .myskills-paragraph p{
+	font-size:14px;
+}
+/**/
+div.about-me-section .myskills .skills i{
+	font-size:24px;
+    margin:0px 5px;
+}
+/**/
+div.about-me-section .testimonies-section .heading{
+	margin-top:20px;
+}
+div.about-me-section .testimonies-section .heading h1{
+	font-size:16px;
+}
+/**/
+div.about-me-section .testimonies-section .testimonies .testimonies-image{
+    width:260px;
+    margin:0px 20px;
+    height:400px;
+}
+div.about-me-section .testimonies-section .testimonies .testimonies-image a img{
+	width:90%;
+	height:90%;
+	margin:auto;
+}
+div.about-me-section .testimonies-section .testimonies .testimonies-image .testimonies-text{
+	margin-top:-30px;
+}
+/**/
+div.about-me-section .hire{
+	margin-top:5px;
+}
+div.about-me-section .hire .heading h1{
+	font-size:16px;
+}
+div.about-me-section .hire .social-links a i{
+	font-size:20px;
+}
+div.about-me-section .hire .social-links{
+	margin-bottom:20px;
+}
+}
+
+
+@media(min-width:551px) and (max-width:768px){
+body{
+  margin:0;
+  padding:0;
+  width:100%;
+  box-sizing:border-box;
+  background-size:cover;
+}
+/**/
+hr{
+    width:20%;
+}
+/**/
+/* --------------- media queries of navbar start (margin bottom)-----------------*/
+#navbar{
+	margin-bottom:50px;
+}
+/* --------------- media queries of navbar ends (margin bottom)-----------------*/
+div.about-me-section{
+	margin-top:20px;
+}
+/**/
+div.about-me-section .about-me .heading{
+   width:100%;
+   box-sizing:border-box;
+   border:2px solid black;
+}
+/**/
+/**/
+div.about-me-section .about-me .heading h1{
+	font-size:24px;
+	line-height:20px;
+}
+/**/
+div.about-me-section .about-me .frontend-paragraph p{
+	font-size:20px;
+}
+/**/
+div.about-me-section .about-me .btn a button{
+	font-size:15px;
+}
+/**/
+div.about-me-section .myskills .heading h1{
+	font-size:22px;
+}
+/**/
+/**/
+div.about-me-section .myskills .myskills-paragraph{
+	padding:0px 10px;
+}
+/**/
+div.about-me-section .myskills .myskills-paragraph p{
+	font-size:14px;
+}
+/**/
+div.about-me-section .myskills .skills i{
+	font-size:24px;
+    margin:0px 5px;
+}
+/**/
+div.about-me-section .testimonies-section .heading{
+	margin-top:20px;
+}
+div.about-me-section .testimonies-section .heading h1{
+	font-size:22px;
+}
+/**/
+div.about-me-section .testimonies-section .testimonies .testimonies-image{
+    width:260px;
+    margin:0px 20px;
+    height:400px;
+}
+div.about-me-section .testimonies-section .testimonies .testimonies-image a img{
+	width:90%;
+	height:90%;
+	margin:auto;
+}
+div.about-me-section .testimonies-section .testimonies .testimonies-image .testimonies-text{
+	margin-top:-30px;
+}
+/**/
+div.about-me-section .hire{
+	margin-top:5px;
+}
+div.about-me-section .hire .heading h1{
+	font-size:22px;
+}
+div.about-me-section .hire .social-links a i{
+	font-size:20px;
+}
+div.about-me-section .hire .social-links{
+	margin-bottom:20px;
+}
+}
+

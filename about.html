@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="fontawesome/css/fontawesome-all.min.css">
-    <link rel="stylesheet" type="text/css" href="about.css">
+    <link rel="stylesheet" type="text/css" href="css/about_navbar.css">
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+        <link rel="stylesheet" type="text/css" href="Media queries/about_media.css">
     <title>My PortFolio</title>
 </head>
-<body>
+<body style="background-image:url('Image/index_bg.jpg');background-size:cover;">
     <div class="page-wrapper">
      <header id="navbar">
         <nav class="navbar-container container">
@@ -30,22 +32,35 @@
           </div>
         </nav>
     </header>
-   <div class="about-section">
-     <div class="inner-container">
-        <h1>About Me</h1>
-        <p class="text">
-             A successful front end developer with 3+ years of experience who thrives in a dynamic and challenging production environment.Proven track record of providing, fast, accurate and effective code in response to requests from management to improve existing products or address critical issues with infrastructure. skilled in the following areas: javascript, Jquery, css3, html5, React js, Responsive Design UI/UX.
-        </p>
-        <div class="skills">
-            <span>Template</span>
-            <span>Template</span>
-            <span>Template</span>
-            <span>Template</span>
-            <span>Template</span>
-        </div>
-     </div>
-   </div>
-    	<footer>
+
+<!-- About me section -->
+<div class="heading">
+    <h1>About Me</h1>
+  </div>
+<div class="about-me-section">
+  <div class="about-picture">
+    <div class="picture">
+    <img src="Image/Baseet.jpg">
+    </div>
+  </div>
+  <div class="about-information">
+    <h1>I'm Ariyibi Baseet</h1>
+    <p class="first-para">
+      Frontend Web developer
+    </p>
+    <p class="second-para">
+      A successful front end developer with 3+ years of experience who thrives in a dynamic and challenging production environment.Proven track record of providing, fast, accurate and effective code in response to requests from management to improve existing products or address critical issues with infrastructure. skilled in the following areas: javascript, Jquery, css3, html5, React js, Responsive Design UI/UX.
+    </p>
+    <div class="social-links">
+      <a href="https://web.facebook.com/bastocurrency"><i class="fab fa-facebook-f"></i></a>
+      <a href=""><i class="fab fa-instagram"></i></a>
+      <a href="https://twitter.com/AriyibiBaseet"><i class="fab fa-twitter"></i></a>
+      <a href="https://github.com/Bastocurrency1999/MyPortfolio"><i class="fas fa-code-branch"></i></a>
+      <a href="https://www.linkedin.com/in/baseet12345/"><i class="fab fa-linkedin"></i></a>     
+    </div>
+  </div>
+</div>
+<!--     	<footer>
            <div class="newsletter">
         <form action="" name="signupform" id="signupform" onsubmit="processForm();">
         Subscribe to our News letter<input type="email" name="email" id="email" placeholder="Your Email Address" required>
@@ -55,7 +70,7 @@
            <div class="dev-option">
               <h4>Created By <a href="mailto:bastohenna@gmail.com">Ariyibi Baseet</a> &copy;CopyRight Reserved 2020</h4>
            </div>
-    	</footer>
+    	</footer> -->
     </div>
 <script>
   document.getElementById('signupform').addEventListener("submit",function(even){
