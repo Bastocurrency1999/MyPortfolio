@@ -47,6 +47,7 @@ div.about-me-section .about-me .heading{
 }
 div.about-me-section .about-me .heading h1{
     font-family:Battlestar;
+    font-family: 'Righteous', cursive;
     letter-spacing:2px;
     color:lightgray;
     font-size:2.5vw;
@@ -183,6 +184,7 @@ div.about-me-section .testimonies-section .heading{
 }
 div.about-me-section .testimonies-section .heading h1{
     font-family:Battlestar;
+    font-family: 'Righteous', cursive;
     letter-spacing:2px;
     color:lightgray;
     font-size:2vw;
@@ -246,6 +248,7 @@ div.about-me-section .hire .heading{
 }
 div.about-me-section .hire .heading h1{
     font-family:Battlestar;
+    font-family: 'Righteous', cursive;
     letter-spacing:2px;
     color:lightgray;
     font-size:2vw;
