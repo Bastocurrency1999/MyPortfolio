@@ -283,7 +283,6 @@ div.about-me-section .hire .social-links a i:hover{
 }
 .Moment-section h1{
     font-family:Battlestar;
-/*    font-family: 'Righteous', cursive;*/
     letter-spacing:2px;
     color:lightgray;
     font-size:2vw;
@@ -291,7 +290,6 @@ div.about-me-section .hire .social-links a i:hover{
     text-align:center;
     text-shadow:5px 5px 5px black;        
 }
-
 .moments{
     display:grid;
     grid-template-columns:repeat(4,1fr);
@@ -309,10 +307,6 @@ div.about-me-section .hire .social-links a i:hover{
     position:relative;
 }
 .item:first-child{
-/*  grid-column-start:1;
-    grid-column-end:4;
-    grid-row-start:1;
-    grid-row-end:3;*/
     grid-column:1 / span 2;
     grid-row:1 / span 2;
     grid-row:1 / span 2;
@@ -333,4 +327,69 @@ div.about-me-section .hire .social-links a i:hover{
    font-family:monospace;
    font-weight:bold;
    color:white;
+   font-size:19px;
 } 
+
+@media(max-width:320px){
+    .moments{
+      padding:0px 20px;  
+      display:grid;
+      grid-template-columns:auto;
+      border:2px solid red;
+      grid-gap:0.3rem;
+    }
+.Moment-section h1{
+    font-family:Battlestar;
+    letter-spacing:2px;
+    font-size:2px;     
+}
+    .item{
+    padding:3rem;
+    height:200px;
+    border:1px solid #ccc;
+    background:#f4f4f4;
+    font-size:1rem;
+    font-weight:bold;
+    text-align:center;
+    position:relative;
+}
+.item:first-child{
+    grid-column:1 / span 1;
+    grid-row:1 / span 1;
+    grid-row:1 / span 1;
+}
+.item:nth-child(4){
+    grid-column:1 / span 1;
+    grid-row: 1 / span 1;
+}
+}
+
+
+@media(min-width:320px) and (max-width:375px){
+    .moments{
+      padding:0px 20px;  
+      display:grid;
+      grid-template-columns:auto;
+      border:2px solid red;
+      grid-gap:0.3rem;
+    }
+    .item{
+    padding:3rem;
+    height:200px;
+    border:1px solid #ccc;
+    background:#f4f4f4;
+    font-size:1rem;
+    font-weight:bold;
+    text-align:center;
+    position:relative;
+}
+.item:first-child{
+    grid-column:1 / span 1;
+    grid-row:1 / span 1;
+    grid-row:1 / span 1;
+}
+.item:nth-child(4){
+    grid-column:1 / span 1;
+    grid-row: 1 / span 1;
+}
+}

@@ -53,7 +53,7 @@ html {
     text-decoration: none;
     display: flex;
     font-weight:bold;
-    font-size:20px;
+    /*font-size:20px;*/
     font-family:monospace;
     align-items: center;
     transition: background-color 0.2s ease-in-out,
